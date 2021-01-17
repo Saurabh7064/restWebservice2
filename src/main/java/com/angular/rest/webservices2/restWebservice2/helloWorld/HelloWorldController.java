@@ -1,4 +1,4 @@
-package com.angular.rest.webservices2.restWebservice2;
+package com.angular.rest.webservices2.restWebservice2.helloWorld;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;

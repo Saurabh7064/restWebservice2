@@ -1,4 +1,4 @@
-package com.angular.rest.webservices2.restWebservice2;
+package com.angular.rest.webservices2.restWebservice2.helloWorld;
 
 public class HelloWorldBean {
 
