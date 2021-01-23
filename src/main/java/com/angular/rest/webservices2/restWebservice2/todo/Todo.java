@@ -9,7 +9,7 @@ public class Todo {
     private String description;
 
     protected Todo(){
-        
+
     }
     public Todo(long id, String username, String description, Date targetDate, boolean isDone) {
         this.id = id;
