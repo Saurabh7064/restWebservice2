@@ -1,4 +1,4 @@
-package com.angular.rest.webservices2.restWebservice2.basic.auth;
+package com.angular.rest.basic.auth;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
