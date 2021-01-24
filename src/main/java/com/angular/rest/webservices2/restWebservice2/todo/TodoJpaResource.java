@@ -17,14 +17,19 @@ public class TodoJpaResource {
     @Autowired
     private TodoHardcodedService todoService;
 
+    @Autowired
+    private TodoJpaRepository todoJpaRepository;
+
     @GetMapping("/jpa/users/{username}/todos")
     public List<Todo> getAllTodos( @PathVariable String username){
-        return todoService.findAll();
+        return  todoJpaRepository.findByUsername(username);
+       // return todoService.findAll();
     }
 
     @GetMapping("/jpa/users/{username}/todos/{id}")
     public Todo getTodo( @PathVariable String username, @PathVariable long id){
-        return todoService.findById(id);
+        return todoJpaRepository.findById(id).get();
+      //  return todoService.findById(id);
     }
 
     @DeleteMapping("/jpa/users/{username}/todos/{id}")
